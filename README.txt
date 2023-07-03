@@ -34,4 +34,3 @@ References:
 Python Socket Programming Tutorial
 Google Python Style Guide
 Python Socket Programming - Server, Client Example
-It is important to note that this is just an example and the specific content and formatting of the README file may vary depending on the specific needs of the project and the requirements set by the instructor.
