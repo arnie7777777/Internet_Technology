@@ -1,9 +1,8 @@
 Project 0 README
 
-Team Members
-
-Evan Lowell
-Hench Wu
+Team Members:
+- Evan Lowell, ewl27
+- Hench Wu, hhw14
 
 Known Issues
 None
@@ -21,7 +20,6 @@ We spent approximately 5 hours on this project.
 
 
 Usage:
-
 To run the server, use the following command:
 python Server.py PORT, example: "python Server.py 5444"
 

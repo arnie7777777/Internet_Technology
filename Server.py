@@ -1,27 +1,26 @@
-# import argparse
 import socket
 import sys 
-# create a socket object
+#creating the socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-#get a local machine name
+#getting the local machine name
 host = socket.gethostname()
 
-#set the port number
+#setting the port number
 port = int(sys.argv[1])
 
-#bind the socket to a public host and port
+#binding the socket to the public host and port
 server_socket.bind((host, port))
 
-#listen for incoming connections
+#listening for incoming connections
 server_socket.listen(1)
 
-#wait for a connection
+#waiting for the connection
 print('Server listening on {}:{}'.format(host, port))
 client_socket, addr = server_socket.accept()
 print('Connected by', addr)
 
-#receive data from the client and modify it
+#receiving the data from the client and modifying it
 while True:
     data = client_socket.recv(1024)
     if not data:
@@ -29,6 +28,5 @@ while True:
     modified_data = data.decode().swapcase()
     client_socket.send(modified_data.encode())
 
-# close the connection
 client_socket.close()
 
